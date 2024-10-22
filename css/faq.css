@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+    --header-height: 3rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(228, 66%, 53%);
+    --first-color-alt: hsl(228, 66%, 47%);
+    --first-color-light: hsl(228, 62%, 59%);
+    --first-color-lighten: hsl(228, 100%, 97%);
+    --second-color: hsl(25, 83%, 53%);
+    --title-color: hsl(228, 57%, 28%);
+    --text-color: hsl(228, 15%, 50%);
+    --text-color-light: hsl(228, 12%, 75%);
+    --border-color: hsl(228, 99%, 98%);
+    --body-color: #09011b;
+    --container-color: #100347;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*=============BASE===========*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .3s; /* For animation dark mode */
+}
+
+
+h1, h2, h3 {
+    color: var(--second-color);
+    font-weight: var(--font-semi-bold);
+}
+  
+ul {
+    list-style: none;
+}
+  
+a {
+    text-decoration: none;
+}
+
+a.active{
+    background: #14ff72cb;
+    border-radius: 2px;
+}
+
+a:hover{
+    /*background: #14ff72cb;*/
+    border-radius: 2px;
+}
+p{
+    color: var(--first-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .section {
+    padding: 4.5rem 0 2rem;
+  }
+  
+  .section__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1rem;
+  }
+  
+  .section__title span {
+    color: var(--second-color);
+  }
+  
+  .section__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--second-color);
+  }
+  
+  .main {
+    overflow: hidden; /* For the animations ScrollReveal*/
+  }
+
+
+.header-faq{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)), url(/images/eagel1.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 3%;
+    border-radius: 30px;
+    max-height: 380px;
+    color: var(--second-color);
+}
+
+.header-title{
+    font-size: 48px;
+    letter-spacing: 1.5;
+    color: var(--second-color);
+}
+
+.header-desc{
+    font-size: 14px;
+    letter-spacing: 1;
+    text-align: center;
+    color: var(--second-color);
+}
+.search{
+    width: 60%;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 5%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.search input{
+    width: 80%;
+    height: 100%;
+    padding: 1% 3%;
+    background: transparent;
+    border: none;
+}
+.search button{
+    width: 20%;
+    min-width: 100px;
+    height: 100%;
+    background-color: var(--second-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: var(--body-color);
+}
+
+.faq{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 3%;
+}
+
+.faq-name{
+    flex: 0.5;
+    padding: 2% 2% 0 0;
+}
+
+.faq-header{
+    padding: 5% 0 0 0;
+    font-size: 40px;
+    letter-spacing: 2;
+    color: var(--second-color);
+}
+
+.faq-box{
+    flex: 1;
+    min-width: 320px;
+    padding: 2% 0 4% 4%;
+    border-left: 2px solid var(--second-color);
+}
+
+.faq-wrapper{
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--container-color);
+}
+
+.faq-title{
+    display: block;
+    position: relative;
+    width: 100%;
+    letter-spacing: 1.2;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+/*creating arrow*/
+.faq-title::after{
+    width: 10px;
+    height: 10px;
+    content: "";
+    float: right;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: rotate(135deg);
+    transition: 0.4s ease-in-out;
+}
+
+.faq-detail{
+    line-height: 1.5;
+    letter-spacing: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.faq-trigger{
+    display: none;
+}
+.faq-trigger:checked + .faq-title + .faq-detail{
+    max-height: 300px;
+}
+.faq-trigger:checked + .faq-title::after{
+    transform: rotate(-45deg);
+    transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width:680px) {
+    .search{
+        width: 80%;
+    }
+    .faq-title{
+        font-size: 18px;
+    }
+}
+.contact-form-section {
+    background: linear-gradient(to right, #00bcd4, #003057); /* Blue gradient background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    color: white;/* White text color */
+    margin: auto;
+      
+  }
+  
+  .contact-form-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    color: #333;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.5); /* Blue shadow effect */
+  }
+  
+  .contact-form .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 50px; /* Round button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .contact-form .submit-button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+  }
+  
+  .form-header{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 3%;
+    border-radius: 30px;
+    max-height: 380px;
+    color: var(--second-color);
+  }

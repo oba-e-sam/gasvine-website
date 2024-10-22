@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/career.css">
+    <link rel="stylesheet" href="css/styles.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+   <title>Responsive Regisration Form </title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="/index.html" class="nav__logo">
+                    <img src="images/GASVINE LOGO.png" alt="logo" class="img__logo">
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu nav__burger'></i>
+                    <i class='bx bx-x nav__close'></i>
+                </div>
+            </div>
+
+            <!----==========NAV MENU============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!----========== DROPDOWN ============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                          ESTATES <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/blogsec/blogsel.html" class="dropdown__link">
+                                    <i class='bx bx-landscape'></i> LAGOS
+                                </a>
+
+                                <a href="/blogsec/blogogun.html" class="dropdown__link">
+                                    <i class='bx bx-landscape'></i> OGUN 
+                                </a>
+
+                                <a href="/blogsec/blogimo.html" class="dropdown__link">
+                                    <i class='bx bx-landscape'></i> IMO 
+                                </a>
+
+                                <a href="/blogsec/blogdelta.html" class="dropdown__link">
+                                    <i class='bx bx-landscape'></i> DELTA 
+                                </a>
+
+                                <a href="/Estates/anambra/anambra.html" class="dropdown__link">
+                                    <i class='bx bx-landscape'></i> ANAMBRA
+                                </a>
+
+                                <a href="/Estates/abuja/abuja.html" class="dropdown__link">
+                                    <i class='bx bx-landscape'></i> ABUJA
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                          HOMES <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/home/bungalow/bungalow1.html" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> BUNGALOW
+                                </a>
+
+                                <a href="/home/duplexsel.html" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> DUPLEX
+                                </a>
+
+                                <!--<a href="" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> TERRACE
+                                </a>
+
+                                <a href="" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> DELTA 
+                                </a>
+
+                                <a href="" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> ANAMBRA
+                                </a>
+                            --> 
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                          SCHEMES <i class='bx bx-chevron-down dropdown__arrow'></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="/blog/blog3.html" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> YOUNG LANDLORD
+                                </a>
+
+                                <a href="/schemes/phs.html" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> THE PROFESSIONAL HOUSING SCHEME (PHS)
+                                </a>
+
+                                <a href="" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> STUDENT
+                                </a>
+
+                               <a href="/schemes/landbanking.html" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> LAND BANKING AND INVESTMENT SCHEME
+                                </a>
+
+                            <!----    <a href="" class="dropdown__link">
+                                    <i class='bx bxs-building-house'></i> ANAMBRA
+                                </a>
+                            --> 
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="aboutus.html" class="nav__link"> ABOUT US </a></li>
+
+                    <li><a href="blog.html" class="nav__link"> BLOG </a></li>
+
+                    <li><a href="career.html" class="nav__link"> CAREER </a></li>
+
+                    <li><a href="contact.html" class="nav__link"> CONTACT US </a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="career">
+            <div class="career-text">
+                <h2>BECOME A MEMBER AT </h2>
+                <h3>GASVINE</h3>
+                <P>become a member at gasvine today an change, and work with the most successful real estate team out there.
+                </div>
+                <img src="images/emmaj.jpeg" alt="">
+            </P>
+        </div>
+    </section>
+
+    <section>
+    <div class="container_form">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label> Address </label>
+                            <input type="text" placeholder="Enter your Address" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Qualifications</label>
+                            <input type="text" placeholder="Enter Qualification" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label> Expertise </label>
+                            <input type="number" placeholder=" Skills Acquired " required>
+                        </div>
+
+                        <div class="input-field">
+                            <label> School you Graduated form  </label>
+                            <input type="text" placeholder="Enter field" required>
+                        </div>
+
+                        <!--<div class="input-field">
+                            <label>Issued State</label>
+                            <input type="text" placeholder="Enter issued state" required>
+                        </div>-->
+
+                        <div class="input-field">
+                            <label> Year of Graduation </label>
+                            <input type="date" placeholder="Graduation year" required>
+                        </div>
+
+                        <!--<div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div>-->
+                    </div>
+
+                    <!--<div class="details ID">
+                        <span class="title">Identity Details</span>
+    
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>ID Type</label>
+                                <input type="text" placeholder="Enter ID type" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>ID Number</label>
+                                <input type="number" placeholder="Enter ID number" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Issued Authority</label>
+                                <input type="text" placeholder="Enter issued authority" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Issued State</label>
+                                <input type="text" placeholder="Enter issued state" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Issued Date</label>
+                                <input type="date" placeholder="Enter your issued date" required>
+                            </div>
+    
+                            <div class="input-field">
+                                <label>Expiry Date</label>
+                                <input type="date" placeholder="Enter expiry date" required>
+                            </div>
+                        </div>-->
+
+                    <button class="nextBtn">
+                        <span class="btnText"> Submit </span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+       <!--     <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Permanent or Temporary" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter your state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your district" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter block number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter ward number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Grandfather</label>
+                            <input type="text" placeholder="Enter grandfther name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" placeholder="Enter spouse name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Father in Law</label>
+                            <input type="text" placeholder="Father in law name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother in Law</label>
+                            <input type="text" placeholder="Mother in law name" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>--
+                </div> 
+            </div>-->
+        </form>
+    </div>
+
+</section>
+
+
+
+<footer>
+    <div class="rowf">
+        <div class="col">
+            <img src="images/GASVINE LOGO.png" alt="" class="foot__img">
+            <p> we are daily driven to keep our promise of affordable housing
+                products with a singular mission to exceed expectations.
+            </p>
+        </div>
+        <div class="col">
+            <h3>HEAD OFFICE <div class="underline"><span></span></div> </h3>
+            <p>13, Adekunle Akala</p>
+            <p>Off Fatai Irawo Street</p>
+            <p>Ajao Estate, Lagos State</p>
+            <p class="email-idf">info@gasvineproperties.com</p>
+            <h4>+234-810000000</h4>
+        </div>
+        <div class="col">
+            <h3>LINKS <div class="underline"><span></span></div> </h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>NEWSLETTER <div class="underline"><span></span></div> </h3>
+            <form>
+                <i class='bx bx-envelope-open'></i>
+               <input type="email" placeholder="Enter your email" required class="inputf">
+               <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+            </form>
+            <div class="social-icons">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-whatsapp'></i>
+                <i class='bx bxl-linkedin' style='color:#ffffff' ></i>
+                <i class='bx bxl-youtube' style='color:#ffffff' ></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">&#1212; Gasvine. All rights reserved</p>
+</footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/career.js"></script>
+</body>
+</html>
